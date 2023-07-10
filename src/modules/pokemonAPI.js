@@ -12,7 +12,7 @@ const pokemonAPI = async () => {
       const url = pokemon.url.split('pokemon/')[1].replace('/', '');
       IDs.push(parseInt(url));
     });
-    localStorage.setItem('pokemonAPI', pokemonID);
+    localStorage.setItem('pokemonAPI', IDs);
   } catch (error) {
     throw new Error(`Failed to get a new pokemon. Error => ${error}`);
   }

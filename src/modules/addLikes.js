@@ -1,6 +1,3 @@
-const liking = (int, parent) => {
-  const p = `<p>${int} likes</p>`;
-  parent.innerHTML += p;
-}
+const liking = (int) => `<p>${int} likes</p>`;
 
 export default liking;

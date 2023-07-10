@@ -8,7 +8,11 @@ const likesStored = async (id) => {
     const likes = await response.json();
     const objectLikes = likes.filter( item => item.item_id === id);
     const liked = objectLikes[0].likes;
-    console.log(liked)
+    const arrLikes = [];
+    likes.forEach(like => {
+      arrLikes.push(like.likes);
+    });
+    localStorage.setItem('likes', arrLikes);
     return liked;
   } catch (error) {
     throw new Error(`Failed to get likes data. Error => ${error}`);
