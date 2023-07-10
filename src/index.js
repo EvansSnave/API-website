@@ -8,6 +8,8 @@ if(!localStorage.getItem('appId')){
   appId();
 }
 
+pokemonAPI();
+
 const pokemonData = [];
 
 for(let i = 1; i < 10; i++) {
