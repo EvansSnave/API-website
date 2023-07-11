@@ -1,6 +1,6 @@
-const like = async (object) => {
+const like = async (id) => {
   try {
-    const appID = localStorage.getItem('appId');
+    const appID = 'nawHjvINeNbBM4D2gSEW';
     const response = await fetch(
       `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
       {
@@ -10,7 +10,7 @@ const like = async (object) => {
         },
         body: JSON.stringify({
           name: 'Pokemon like',
-          item_id: object.id,
+          item_id: id,
         })
       }
     );

@@ -7,7 +7,7 @@ const makeCard = (pokemon) => {
                     <div class="pokemon__info-container">
                         <p>${pokemon.name}</p>
                         <div class="pokemon__icon-container">
-                            <img class="pokemon__heart-icon" src="${heart}" alt="like icon">
+                            <img class="pokemon__heart-icon" id="heart${pokemon.id}" src="${heart}" alt="like icon">
                         </div>
                     </div>
                     <button class="pokemon__button comments">Comments</button>
