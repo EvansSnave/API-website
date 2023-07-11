@@ -5,9 +5,9 @@ import liking from './addLikes';
 const makeListPokemon = (array) => {
   const likes = localStorage.getItem('likes');
   const arr = [...likes.split(',')];
-  array.forEach(pokemon => {
+  array.forEach((pokemon, index) => {
     insert(pokemon);
-    const iconContainer = document.querySelectorAll('.pokemon__icon-container')[pokemon.id-1];
+    const iconContainer = document.querySelectorAll('.pokemon__icon-container')[index];
     const lik = arr[pokemon.id-1];
     iconContainer.innerHTML += liking(lik);
   });

@@ -14,7 +14,6 @@ const like = async (object) => {
         })
       }
     );
-
     if (response.ok !== true) {
       throw new Error('Failed to like.');
     }
