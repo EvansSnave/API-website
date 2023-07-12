@@ -23,7 +23,6 @@ const likesStored = async () => {
     }
     if (arrLikes.length === 0) {
       // Handle the case where there are no likes
-      console.log('No likes available.');
       return;
     }
     localStorage.setItem('likes', JSON.stringify(arrLikes));

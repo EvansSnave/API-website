@@ -15,7 +15,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* stylelint-disable csstree/validator */\r\n/* stylelint-disable unit-no-unknown */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  border: 0;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n  list-style: none;\r\n  font-size: clamp(2vh + 1px, 1.8vw + 1px, 2vw + 1px);\r\n  font-weight: 100;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  background-color: transparent;\r\n}\r\n\r\n/* .pokemon__heart-icon {\r\n  width: calc(1dvw + 1rem);\r\n} */`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://api-website/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* stylelint-disable csstree/validator */\r\n/* stylelint-disable unit-no-unknown */\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  border: 0;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n  list-style: none;\r\n  font-weight: 100;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  background-color: transparent;\r\n}\r\n\r\nbody {\r\n  height: 100%;\r\n}\r\n\r\n.home__list {\r\n  width: fit-content;\r\n  display: grid;\r\n  grid-gap: calc(1dvw + 0.6rem);\r\n  margin: calc(1dvw + 0.6rem);\r\n  grid-template-columns: repeat(3, 1fr);\r\n}\r\n\r\n.home__pokemon {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.list__pokemon {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  border: solid black 2px;\r\n}\r\n\r\n.pokemon__heart-icon {\r\n  width: calc(1dvw + 1rem);\r\n}\r\n\r\n.home__logo {\r\n  width: calc(1dvw + 1rem);\r\n}\r\n\r\nnav {\r\n  display: flex;\r\n}\r\n\r\n.pokemon__image {\r\n  width: max(10dvw, 200px);\r\n  padding: calc(1dvw + 0.6rem);\r\n}\r\n\r\n.pokemon__info-container {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.pokemon__icon-container {\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  margin-left: 1dvw;\r\n}\r\n\r\n.pokemon__button {\r\n  width: fit-content;\r\n  margin: calc(0.3dvw + 0.7rem);\r\n  padding: calc(0.3dvw + 0.5rem);\r\n  border: solid black;\r\n  border-radius: calc(0.3dvw + 0.7rem);\r\n}\r\n\r\n.reservation {\r\n  margin-top: 0;\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://api-website/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -113,9 +113,19 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_appID__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/appID */ \"./src/modules/appID.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_createPokemon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/createPokemon */ \"./src/modules/createPokemon.js\");\n/* harmony import */ var _modules_makePokemonList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/makePokemonList */ \"./src/modules/makePokemonList.js\");\n/* harmony import */ var _modules_getLikes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/getLikes */ \"./src/modules/getLikes.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nif(!localStorage.getItem('appId')){\r\n  await (0,_modules_appID__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\nconst pokemonData = [];\r\n\r\nconst storage = [1,2,3,4,5,6,7,8,9,10];\r\nfor (let i = 1; i < storage.length; i++) {\r\n  const pokem = new _modules_createPokemon__WEBPACK_IMPORTED_MODULE_2__[\"default\"](i);\r\n  const pokemon = await pokem.data();\r\n  await (0,_modules_getLikes__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\r\n  pokemonData.push(pokemon);\r\n}\r\n\r\n(0,_modules_makePokemonList__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(pokemonData);\r\n\r\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } }, 1);\n\n//# sourceURL=webpack://api-website/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/addLikes.js":
+/*!*********************************!*\
+  !*** ./src/modules/addLikes.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_appID__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/appID */ \"./src/modules/appID.js\");\n/* harmony import */ var _modules_pokemonAPI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/pokemonAPI */ \"./src/modules/pokemonAPI.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\r\n\r\n\r\n\r\nif(!localStorage.getItem('appId')){\r\n  (0,_modules_appID__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\r\n(0,_modules_pokemonAPI__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\n\n//# sourceURL=webpack://api-website/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst liking = (int) => `<p> ${int} likes</p>`;\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (liking);\n\n//# sourceURL=webpack://api-website/./src/modules/addLikes.js?");
 
 /***/ }),
 
@@ -129,13 +139,73 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/modules/pokemonAPI.js":
-/*!***********************************!*\
-  !*** ./src/modules/pokemonAPI.js ***!
-  \***********************************/
+/***/ "./src/modules/createLi.js":
+/*!*********************************!*\
+  !*** ./src/modules/createLi.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst pokemonAPI = async () => {\r\n  try {\r\n    const response = await fetch('https://pokeapi.co/api/v2/pokemon/',)\r\n    if (response.ok !== true) {\r\n      throw new Error('Failed to get a pokemon.');\r\n    }\r\n\r\n    const pokemonResult = await response.json();\r\n    console.log(pokemonResult)\r\n\r\n    localStorage.setItem('pokemonAPI', pokemonResult);\r\n  } catch (error) {\r\n    throw new Error(`Failed to get a new pokemon. Error => ${error}`);\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pokemonAPI);\n\n//# sourceURL=webpack://api-website/./src/modules/pokemonAPI.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _src_assets_heart_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../src/assets/heart.png */ \"./src/assets/heart.png\");\n\r\n\r\nconst makeCard = (pokemon) => {\r\n    return `\r\n    <li class=\"list__pokemon\">\r\n                    <img class=\"pokemon__image\" src=\"${pokemon.sprites.front_default}\" alt=\"${pokemon.name} image\">\r\n                    <div class=\"pokemon__info-container\">\r\n                        <p>${pokemon.name}</p>\r\n                        <div class=\"pokemon__icon-container\">\r\n                            <img class=\"pokemon__heart-icon\" id=\"heart${pokemon.id}\" src=\"${_src_assets_heart_png__WEBPACK_IMPORTED_MODULE_0__}\" alt=\"like icon\">\r\n                        </div>\r\n                    </div>\r\n                    <button class=\"pokemon__button comments\">Comments</button>\r\n                    <button class=\"pokemon__button reservation\">Reservations</button>\r\n                </li>\r\n  `\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeCard);\n\n//# sourceURL=webpack://api-website/./src/modules/createLi.js?");
+
+/***/ }),
+
+/***/ "./src/modules/createPokemon.js":
+/*!**************************************!*\
+  !*** ./src/modules/createPokemon.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Pokemon {\r\n  constructor(id) {\r\n    this.id = id;\r\n  }\r\n\r\n  async data() {\r\n    try {\r\n      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${this.id}/`);\r\n      if (!response.ok) throw new Error('Failed to create a new pokemon.');\r\n      const pokemonData = await response.json();\r\n      return pokemonData;\r\n    } catch (error) {\r\n      throw new Error(`Failed to create a new pokemon. Error => ${error}`);\r\n    }\r\n  };\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pokemon);\r\n\n\n//# sourceURL=webpack://api-website/./src/modules/createPokemon.js?");
+
+/***/ }),
+
+/***/ "./src/modules/getLikes.js":
+/*!*********************************!*\
+  !*** ./src/modules/getLikes.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst likesStored = async () => {\r\n  try {\r\n    const appID = localStorage.getItem('appId');\r\n    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`);\r\n    if (!response.ok) {\r\n      throw new Error('Failed to get likes data.');\r\n    }\r\n    const arrLikes = [];\r\n    if (response.body) {\r\n      const reader = response.body.getReader();\r\n      const decoder = new TextDecoder('utf-8');\r\n      let result = await reader.read();\r\n      let chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });\r\n      while (!result.done) {\r\n        result = await reader.read();\r\n        chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });\r\n      }\r\n      if (chunk.trim() !== '') {\r\n        JSON.parse(chunk).forEach(element => {\r\n          arrLikes.push(element);\r\n        });\r\n      }\r\n    }\r\n    if (arrLikes.length === 0) {\r\n      // Handle the case where there are no likes\r\n      console.log('No likes available.');\r\n      return;\r\n    }\r\n    localStorage.setItem('likes', JSON.stringify(arrLikes));\r\n  } catch (error) {\r\n    throw new Error(`Failed to get likes data. Error => ${error}`);\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (likesStored);\n\n//# sourceURL=webpack://api-website/./src/modules/getLikes.js?");
+
+/***/ }),
+
+/***/ "./src/modules/insertPokemon.js":
+/*!**************************************!*\
+  !*** ./src/modules/insertPokemon.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _createLi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createLi.js */ \"./src/modules/createLi.js\");\n\r\n\r\nconst insert = (pokemon) => {\r\n  const ul = document.querySelector('.home__list');\r\n  ul.innerHTML += (0,_createLi_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(pokemon);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (insert);\n\n//# sourceURL=webpack://api-website/./src/modules/insertPokemon.js?");
+
+/***/ }),
+
+/***/ "./src/modules/like.js":
+/*!*****************************!*\
+  !*** ./src/modules/like.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst like = async (id) => {\r\n  try {\r\n    const appID = localStorage.getItem('appId');\r\n    console.log(appID)\r\n    const response = await fetch(\r\n      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,\r\n      {\r\n        method: 'POST',\r\n        headers: {\r\n          'Content-Type': 'application/json; charset=UTF-8',\r\n        },\r\n        body: JSON.stringify({\r\n          name: 'Pokemon like',\r\n          item_id: id,\r\n        })\r\n      }\r\n    );\r\n    if (response.ok !== true) {\r\n      throw new Error('Failed to like.');\r\n    }\r\n  } catch (error) {\r\n    throw new Error(`Failed to like. Error => ${error}`);\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (like);\n\n//# sourceURL=webpack://api-website/./src/modules/like.js?");
+
+/***/ }),
+
+/***/ "./src/modules/makePokemonList.js":
+/*!****************************************!*\
+  !*** ./src/modules/makePokemonList.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _insertPokemon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./insertPokemon */ \"./src/modules/insertPokemon.js\");\n/* harmony import */ var _like__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./like */ \"./src/modules/like.js\");\n/* harmony import */ var _addLikes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./addLikes */ \"./src/modules/addLikes.js\");\n\r\n\r\n\r\n\r\nconst makeListPokemon = (array) => {\r\n  let likes = [{item_id: 0,likes: 0,}];\r\n  if(localStorage.getItem('likes')) {\r\n    likes = JSON.parse(localStorage.getItem('likes'));\r\n  }\r\n  console.log(likes)\r\n  const arr = likes;\r\n  array.forEach((pokemon, index) => {\r\n    (0,_insertPokemon__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(pokemon);\r\n    let obj = likes.find(object => object.item_id == pokemon.id);\r\n    if (obj == undefined) obj = {item_id: pokemon.id, likes: 0,};\r\n    const iconContainer = document.querySelectorAll('.pokemon__icon-container')[index];\r\n    const lik = obj.likes;\r\n    iconContainer.innerHTML += (0,_addLikes__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(lik);\r\n  });\r\n\r\n  array.forEach(pokemon => {\r\n    const likeButton = document.getElementById(`heart${pokemon.id}`);\r\n    likeButton.addEventListener('click', async() => {\r\n      console.log(likeButton)\r\n      await (0,_like__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(pokemon.id);\r\n    });  \r\n  }) \r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeListPokemon);\n\n//# sourceURL=webpack://api-website/./src/modules/makePokemonList.js?");
+
+/***/ }),
+
+/***/ "./src/assets/heart.png":
+/*!******************************!*\
+  !*** ./src/assets/heart.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c412cbaead4744166c20.png\";\n\n//# sourceURL=webpack://api-website/./src/assets/heart.png?");
 
 /***/ })
 

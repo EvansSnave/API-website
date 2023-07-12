@@ -7,7 +7,6 @@ const makeListPokemon = (array) => {
   if(localStorage.getItem('likes')) {
     likes = JSON.parse(localStorage.getItem('likes'));
   }
-  console.log(likes)
   const arr = likes;
   array.forEach((pokemon, index) => {
     insert(pokemon);
@@ -21,7 +20,6 @@ const makeListPokemon = (array) => {
   array.forEach(pokemon => {
     const likeButton = document.getElementById(`heart${pokemon.id}`);
     likeButton.addEventListener('click', async() => {
-      console.log(likeButton)
       await like(pokemon.id);
     });  
   }) 

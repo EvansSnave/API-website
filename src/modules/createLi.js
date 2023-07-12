@@ -11,7 +11,6 @@ const makeCard = (pokemon) => {
                         </div>
                     </div>
                     <button class="pokemon__button comments">Comments</button>
-                    <button class="pokemon__button reservation">Reservations</button>
                 </li>
   `
 }
