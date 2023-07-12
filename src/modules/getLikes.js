@@ -1,6 +1,6 @@
 const likesStored = async () => {
   try {
-    const appID = 'nawHjvINeNbBM4D2gSEW';
+    const appID = 'g1mpGCsiJcOIeZRt3rux';
     const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`);
     if (!response.ok) {
       throw new Error('Failed to get likes data.');
@@ -11,13 +11,14 @@ const likesStored = async () => {
       const decoder = new TextDecoder('utf-8');
       let result = await reader.read();
       let chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
-      console.log(chunk)
-      JSON.parse([chunk]).forEach(element => {
-        arrLikes.push(element.likes)
-      });
       while (!result.done) {
         result = await reader.read();
-        chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
+        chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
+      }
+      if (chunk.trim() !== '') {
+        JSON.parse(chunk).forEach(element => {
+          arrLikes.push(element);
+        });
       }
     }
     if (arrLikes.length === 0) {
@@ -25,9 +26,10 @@ const likesStored = async () => {
       console.log('No likes available.');
       return;
     }
-    localStorage.setItem('likes', arrLikes);
+    localStorage.setItem('likes', JSON.stringify(arrLikes));
   } catch (error) {
     throw new Error(`Failed to get likes data. Error => ${error}`);
   }
 };
+
 export default likesStored;

@@ -1,6 +1,6 @@
 const like = async (id) => {
   try {
-    const appID = 'nawHjvINeNbBM4D2gSEW';
+    const appID = 'g1mpGCsiJcOIeZRt3rux';
     const response = await fetch(
       `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
       {

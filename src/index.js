@@ -1,10 +1,8 @@
 import appId from './modules/appID';
-import pokemonAPI from './modules/pokemonAPI';
 import './style.css';
 import Pokemon from './modules/createPokemon';
 import makeListPokemon from './modules/makePokemonList';
 import likesStored from './modules/getLikes';
-import like from './modules/like';
 
 if(!localStorage.getItem('appId')){
   appId();
@@ -18,16 +16,6 @@ for (let i = 1; i < storage.length; i++) {
   await likesStored();
   pokemonData.push(pokemon);
 }
-
-
-
-
-// const pokem = new Pokemon(900);
-// const pokemon = await pokem.data();
-// like(pokemon);
-// await likesStored();
-// pokemonData.push(pokemon);
-
 
 makeListPokemon(pokemonData);
 

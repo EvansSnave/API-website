@@ -3,16 +3,18 @@ import like from './like';
 import liking from './addLikes';
 
 const makeListPokemon = (array) => {
-  let likes = '0,0,0,0,0,0,0,0,0,0,0';
+  let likes = [{item_id: 0,likes: 0,}];
   if(localStorage.getItem('likes')) {
-    likes = localStorage.getItem('likes');
+    likes = JSON.parse(localStorage.getItem('likes'));
   }
-  const arr = [...likes.split(',')];
+  console.log(likes)
+  const arr = likes;
   array.forEach((pokemon, index) => {
     insert(pokemon);
+    let obj = likes.find(object => object.item_id == pokemon.id);
+    if (obj == undefined) obj = {item_id: pokemon.id, likes: 0,};
     const iconContainer = document.querySelectorAll('.pokemon__icon-container')[index];
-    const lik = arr[pokemon.id-1];
-    console.log(lik)
+    const lik = obj.likes;
     iconContainer.innerHTML += liking(lik);
   });
 

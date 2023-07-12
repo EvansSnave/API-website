@@ -1,3 +1,3 @@
-const liking = (int) => `<p>${int ? int : '0'} likes</p>`;
+const liking = (int) => `<p> ${int} likes</p>`;
 
 export default liking;
