@@ -4,10 +4,8 @@ import liking from './addLikes';
 
 const makeListPokemon = (array) => {
   let likes = [{item_id: 0,likes: 0,}];
-  if(localStorage.getItem('likes')) {
-    likes = JSON.parse(localStorage.getItem('likes'));
-  }
-  const arr = likes;
+  if(localStorage.getItem('likes')) likes = JSON.parse(localStorage.getItem('likes'));
+  
   array.forEach((pokemon, index) => {
     insert(pokemon);
     let obj = likes.find(object => object.item_id == pokemon.id);

@@ -13,9 +13,7 @@ const appId = async () => {
       }
     );
 
-    if (response.ok !== true) {
-      throw new Error('Failed to create a new app.');
-    }
+    if (response.ok !== true) throw new Error('Failed to create a new app.');
 
     const newAppResult = await response.text();
 

@@ -2,9 +2,7 @@ const likesStored = async () => {
   try {
     const appID = localStorage.getItem('appId');
     const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`);
-    if (!response.ok) {
-      throw new Error('Failed to get likes data.');
-    }
+    if (!response.ok) throw new Error('Failed to get likes data.');
     const arrLikes = [];
     if (response.body) {
       const reader = response.body.getReader();
@@ -21,10 +19,7 @@ const likesStored = async () => {
         });
       }
     }
-    if (arrLikes.length === 0) {
-      // Handle the case where there are no likes
-      return;
-    }
+    if (arrLikes.length === 0) return;
     localStorage.setItem('likes', JSON.stringify(arrLikes));
   } catch (error) {
     throw new Error(`Failed to get likes data. Error => ${error}`);

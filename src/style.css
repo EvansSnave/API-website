@@ -53,7 +53,7 @@ main {
 }
 
 .pokemon__heart-icon:hover {
-  animation: like 2s;
+  animation: like 1.5s;
 }
 
 @keyframes like {

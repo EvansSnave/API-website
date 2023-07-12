@@ -1,3 +1,5 @@
+import likesStored from './getLikes';
+
 const like = async (id) => {
   try {
     const appID = localStorage.getItem('appId');
@@ -14,9 +16,12 @@ const like = async (id) => {
         })
       }
     );
-    if (response.ok !== true) {
-      throw new Error('Failed to like.');
-    }
+    await likesStored();
+    const likesForId = JSON.parse(localStorage.getItem('likes'));
+    const itemId = likesForId.find(object => object.item_id == id)
+    const amountLikes = document.querySelectorAll('.likes')[id-1];
+    amountLikes.textContent = `${itemId.likes} likes`;
+    if (response.ok !== true) throw new Error('Failed to like.');
   } catch (error) {
     throw new Error(`Failed to like. Error => ${error}`);
   }
