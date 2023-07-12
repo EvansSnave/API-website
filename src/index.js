@@ -5,7 +5,7 @@ import makeListPokemon from './modules/makePokemonList';
 import likesStored from './modules/getLikes';
 
 if(!localStorage.getItem('appId')){
-  appId();
+  await appId();
 }
 const pokemonData = [];
 

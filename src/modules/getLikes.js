@@ -1,6 +1,6 @@
 const likesStored = async () => {
   try {
-    const appID = 'g1mpGCsiJcOIeZRt3rux';
+    const appID = localStorage.getItem('appId');
     const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`);
     if (!response.ok) {
       throw new Error('Failed to get likes data.');
