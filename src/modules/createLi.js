@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions, import/no-unresolved, import/no-absolute-path */
 import heart from '/src/assets/heart.png';
 
 const makeCard = (pokemon) => {
