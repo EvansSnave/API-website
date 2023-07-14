@@ -15,7 +15,7 @@ const likesStored = async () => {
         chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       }
       if (chunk.trim() !== '') {
-        JSON.parse(chunk).forEach(element => {
+        JSON.parse(chunk).forEach((element) => {
           arrLikes.push(element);
         });
       }
