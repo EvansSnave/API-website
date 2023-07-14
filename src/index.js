@@ -4,6 +4,7 @@ import Pokemon from './modules/createPokemon';
 import makeListPokemon from './modules/makePokemonList';
 import likesStored from './modules/getLikes';
 import homeCounter from './modules/homeCounter';
+import commentButton from './modules/commentButton';
 
 if(!localStorage.getItem('appId')) await appId();
 
@@ -20,4 +21,6 @@ for (let i = 1; i < storage.length; i++) {
 homeCounter(pokemonData);
 
 makeListPokemon(pokemonData);
+
+commentButton();
 
