@@ -1,3 +1,4 @@
+/* eslint-disable no-await-in-loop */
 const likesStored = async () => {
   try {
     const appID = localStorage.getItem('appId');
@@ -16,14 +17,13 @@ const likesStored = async () => {
         chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       }
       if (chunk.trim() !== '') {
-        JSON.parse(chunk).forEach(element => {
+        JSON.parse(chunk).forEach((element) => {
           arrLikes.push(element);
         });
       }
     }
     if (arrLikes.length === 0) {
       // Handle the case where there are no likes
-      console.log('No likes available.');
       return;
     }
     localStorage.setItem('likes', JSON.stringify(arrLikes));

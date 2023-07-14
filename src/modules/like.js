@@ -1,7 +1,6 @@
 const like = async (id) => {
   try {
     const appID = localStorage.getItem('appId');
-    console.log(appID)
     const response = await fetch(
       `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`,
       {
@@ -12,8 +11,8 @@ const like = async (id) => {
         body: JSON.stringify({
           name: 'Pokemon like',
           item_id: id,
-        })
-      }
+        }),
+      },
     );
     if (response.ok !== true) {
       throw new Error('Failed to like.');

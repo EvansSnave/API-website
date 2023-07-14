@@ -12,7 +12,7 @@ class Pokemon {
     } catch (error) {
       throw new Error(`Failed to create a new pokemon. Error => ${error}`);
     }
-  };
+  }
 }
 
 export default Pokemon;
