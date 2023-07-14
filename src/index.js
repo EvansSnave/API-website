@@ -1,5 +1,5 @@
-import appId from './modules/appID';
+import appId from './modules/appID.js';
 
-if(!localStorage.getItem('appId')){
+if (!localStorage.getItem('appId')) {
   appId();
 }
