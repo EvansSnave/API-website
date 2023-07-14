@@ -14,6 +14,7 @@
 
 body {
   height: 100%;
+  display: grid;
 }
 
 main {
@@ -122,4 +123,127 @@ nav > * {
   padding: calc(0.3dvw + 0.5rem);
   border: solid black 2px;
   border-radius: calc(0.3dvw + 0.7rem);
+}
+
+.close-button {
+  width: calc(2dvw + 1rem);
+}
+
+.comment-window {
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  top: 28%;
+  left: 28%;
+  transform: translate(-20%, -20%);
+  width: 70%;
+  height: 85%;
+  background-color: white;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+  border: black solid 7px;
+  border-radius: 5%;
+  overflow: scroll;
+}
+
+.comment-window::-webkit-scrollbar {
+  display: none;
+}
+
+.images {
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-end;
+  width: 100%;
+}
+
+.comment-window, main {
+  grid-area: 1/1;
+}
+
+.pokemon-generated {
+  width: 30dvw;
+  margin-right: 10dvw;
+}
+
+.pokemon-name {
+  margin: 3dvw;
+  font-size: 5dvw;
+  width: fit-content;
+}
+
+.comment-window > * {
+  font-size: 2dvw;
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-info, .comments-shown {
+  width: 100%;
+  margin-bottom: 3dvw;
+}
+
+.list-info > * {
+  margin-bottom: 2dvw;
+}
+
+.comment-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.comment-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-comment {
+  font-size: 3dvw;
+  width: fit-content;
+  margin-bottom: 2dvw;
+}
+
+.comments-number {
+  margin-bottom: 1.5dvw;
+}
+
+.user-name,
+.comment,
+.comment-button {
+  border: 5px black solid;
+  padding: 1dvw;
+  font-size: 2dvw;
+  margin-bottom: 1dvw;
+  border-radius: 10px;
+}
+
+.comment-button {
+  background-color: red;
+  color: white;
+  width: 60%;
+}
+
+.comment-button:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+th, td {
+  border-bottom: 1.5dvw solid transparent;
+  padding-left: 2dvw;
+}
+
+.data-date {
+  padding-left: 0;
 }
