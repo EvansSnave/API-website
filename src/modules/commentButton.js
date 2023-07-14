@@ -1,8 +1,8 @@
-import closeWindow from './closeButton';
-import createComment from './createCommentDOM';
-import Pokemon from './createPokemon';
-import submit from './submitComment';
-import loading from './loadComments'
+import closeWindow from './closeButton.js';
+import createComment from './createCommentDOM.js';
+import Pokemon from './createPokemon.js';
+import submit from './submitComment.js';
+import loading from './loadComments.js';
 
 const commentButton = () => {
   const buttons = document.querySelectorAll('.comments');
@@ -24,8 +24,8 @@ const commentButton = () => {
       submit(card.id);
       loading(card.id);
       document.body.style.overflow = 'hidden';
-    })
-  })
-}
+    });
+  });
+};
 
 export default commentButton;

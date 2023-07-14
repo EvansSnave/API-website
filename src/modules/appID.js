@@ -9,8 +9,8 @@ const appId = async () => {
         },
         body: JSON.stringify({
           name: 'Pokemon APP',
-        })
-      }
+        }),
+      },
     );
 
     if (response.ok !== true) throw new Error('Failed to create a new app.');

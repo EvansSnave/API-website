@@ -10,11 +10,11 @@ const likesStored = async () => {
       let result = await reader.read();
       let chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       while (!result.done) {
-        result = await reader.read();
+        result = reader.read();
         chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       }
       if (chunk.trim() !== '') {
-        JSON.parse(chunk).forEach(element => {
+        JSON.parse(chunk).forEach((element) => {
           arrLikes.push(element);
         });
       }

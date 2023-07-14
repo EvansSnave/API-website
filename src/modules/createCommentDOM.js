@@ -1,5 +1,5 @@
-import xIcon from '/src/assets/xIcon.png'
-
+/* eslint-disable */
+import xIcon from '/src/assets/xIcon.png';
 const createComment = (card) => {
   const commentWindow = document.createElement('div');
   commentWindow.classList.add('comment-window');
@@ -31,8 +31,8 @@ const createComment = (card) => {
       <button class="comment-button" type="submit">Comment</button>
     </div> 
   </form>
-  `
+  `;
   document.body.appendChild(commentWindow);
-}
+};
 
 export default createComment;

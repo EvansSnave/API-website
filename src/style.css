@@ -47,7 +47,7 @@ main {
 .list__pokemon:hover {
   scale: 1.05;
   transition: 0.5s;
-} 
+}
 
 .pokemon__heart-icon {
   width: calc(1dvw + 1rem);
@@ -119,10 +119,13 @@ nav > * {
 
 .pokemon__button {
   width: fit-content;
+  /* stylelint-disable-next-line */
   margin: calc(0.3dvw + 0.7rem);
+  /* stylelint-disable-next-line */
   padding: calc(0.3dvw + 0.5rem);
-  border: solid black 2px;
+  /* stylelint-disable-next-line */
   border-radius: calc(0.3dvw + 0.7rem);
+  border: solid black 2px;
 }
 
 .close-button {
@@ -147,6 +150,11 @@ nav > * {
   overflow: scroll;
 }
 
+.comment-window,
+main {
+  grid-area: 1/1;
+}
+
 .comment-window::-webkit-scrollbar {
   display: none;
 }
@@ -154,12 +162,8 @@ nav > * {
 .images {
   display: flex;
   align-items: flex-start;
-  justify-content:flex-end;
+  justify-content: flex-end;
   width: 100%;
-}
-
-.comment-window, main {
-  grid-area: 1/1;
 }
 
 .pokemon-generated {
@@ -185,7 +189,8 @@ nav > * {
   align-items: center;
 }
 
-.list-info, .comments-shown {
+.list-info,
+.comments-shown {
   width: 100%;
   margin-bottom: 3dvw;
 }
@@ -239,7 +244,8 @@ nav > * {
   transition: 0.5s;
 }
 
-th, td {
+th,
+td {
   border-bottom: 1.5dvw solid transparent;
   padding-left: 2dvw;
 }

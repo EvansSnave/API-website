@@ -1,5 +1,5 @@
-import likesStored from './getLikes';
-import updateLikes from './updateLikesDOM,js';
+import likesStored from './getLikes.js';
+import updateLikes from './updateLikesDOM.js';
 
 const like = async (id) => {
   try {
@@ -14,8 +14,8 @@ const like = async (id) => {
         body: JSON.stringify({
           name: 'Pokemon like',
           item_id: id,
-        })
-      }
+        }),
+      },
     );
     await likesStored();
     updateLikes(id);
