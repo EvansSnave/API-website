@@ -1,3 +1,4 @@
+/* eslint-disable no-await-in-loop */
 const likesStored = async () => {
   try {
     const appID = localStorage.getItem('appId');
