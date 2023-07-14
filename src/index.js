@@ -1,3 +1,4 @@
+/* eslint-disable no-await-in-loop */
 import appId from './modules/appID';
 import './style.css';
 import Pokemon from './modules/createPokemon';
