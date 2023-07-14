@@ -1,5 +1,6 @@
 /* stylelint-disable csstree/validator */
 /* stylelint-disable unit-no-unknown */
+/* stylelint-disable function-calc-no-invalid */
 * {
   padding: 0;
   margin: 0;
@@ -46,7 +47,7 @@ main {
 .list__pokemon:hover {
   scale: 1.05;
   transition: 0.5s;
-} 
+}
 
 .pokemon__heart-icon {
   width: calc(1dvw + 1rem);
