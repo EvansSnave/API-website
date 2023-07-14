@@ -1,0 +1,126 @@
+/* stylelint-disable csstree/validator */
+/* stylelint-disable unit-no-unknown */
+/* stylelint-disable function-calc-no-invalid */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  background-color: red;
+}
+
+.home__list {
+  width: fit-content;
+  display: grid;
+  grid-gap: calc(1dvw + 0.6rem);
+  column-gap: calc(3dvw + 0.6rem);
+  margin: calc(1dvw + 0.6rem);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home__pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.list__pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 3px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.list__pokemon:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+.pokemon__heart-icon {
+  width: calc(1dvw + 1rem);
+}
+
+.pokemon__heart-icon:hover {
+  animation: like 1.5s;
+}
+
+@keyframes like {
+  10% {
+    scale: 1.2;
+  }
+
+  50% {
+    scale: 0.7;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.home__logo {
+  width: calc(1dvw + 1rem);
+}
+
+nav {
+  display: flex;
+  padding: clamp(1.3dvw + 5px, 2dvw + 10px, 1dvw + 1px);
+  padding-left: clamp(7dvw + 5px, 4dvw + 10px, 3dvw + 1px);
+  align-items: center;
+  background-color: white;
+  border-bottom: solid black 2px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.footer__p {
+  padding: clamp(1.3dvw + 5px, 2dvw + 10px, 1dvw + 1px);
+  padding-left: clamp(7dvw + 5px, 4dvw + 10px, 3dvw + 1px);
+  background-color: white;
+  border-top: solid black 2px;
+}
+
+nav > * {
+  margin-right: clamp(0.3dvw + 5px, 0.2dvw + 10px, 0.2dvw + 1px);
+}
+
+.pokemon__image {
+  width: max(13dvw, 200px);
+  padding: calc(1dvw + 0.6rem);
+}
+
+.pokemon__info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon__icon-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1dvw;
+}
+
+.pokemon__button {
+  width: fit-content;
+  margin: calc(0.3dvw + 0.7rem);
+  padding: calc(0.3dvw + 0.5rem);
+  border: solid black 2px;
+  border-radius: calc(0.3dvw + 0.7rem);
+}
