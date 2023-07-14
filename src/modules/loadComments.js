@@ -10,7 +10,7 @@ const loading = async (id) => {
     <tr class="data-dom">
       <td class="data-date">${comments.creation_date}</td>
       <td class="data-user">${comments.username}</td>
-      <td class="data-comment">${comments.comment}</td>
+      <td class="data-comment">${comments.comment.value}</td>
     </tr>
     `;
     table.insertAdjacentHTML('afterbegin', htmlContent);

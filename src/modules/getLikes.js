@@ -10,7 +10,8 @@ const likesStored = async () => {
       let result = await reader.read();
       let chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       while (!result.done) {
-        result = reader.read();
+        /* eslint-disable */
+        result = await reader.read();
         chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
       }
       if (chunk.trim() !== '') {
