@@ -3,12 +3,11 @@ const getComment = async (id) => {
     const appID = localStorage.getItem('appId');
     const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/comments?item_id=${id}`);
     const dataComment = await response.json();
-    const comment = 'Be the first to comment!';
     if (dataComment.error) {
       return [{
-        creation_date: 'no data',
-        username: 'no one has commented yet',
-        comment,
+        creation_date: 'No data',
+        username: 'No one has commented yet',
+        comment: { value: 'Be the first one to comment' },
       }];
     }
     if (response.ok !== true) throw new Error('Failed to make a new comment.');
