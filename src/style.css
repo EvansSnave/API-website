@@ -1,0 +1,255 @@
+/* stylelint-disable csstree/validator */
+/* stylelint-disable unit-no-unknown */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+
+body {
+  height: 100%;
+  display: grid;
+}
+
+main {
+  background-color: red;
+}
+
+.home__list {
+  width: fit-content;
+  display: grid;
+  grid-gap: calc(1dvw + 0.6rem);
+  column-gap: calc(3dvw + 0.6rem);
+  margin: calc(1dvw + 0.6rem);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home__pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.list__pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 3px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.list__pokemon:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+.pokemon__heart-icon {
+  width: calc(1dvw + 1rem);
+}
+
+.pokemon__heart-icon:hover {
+  animation: like 1.5s;
+}
+
+@keyframes like {
+  10% {
+    scale: 1.2;
+  }
+
+  50% {
+    scale: 0.7;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.home__logo {
+  width: calc(1dvw + 1rem);
+}
+
+nav {
+  display: flex;
+  padding: clamp(1.3dvw + 5px, 2dvw + 10px, 1dvw + 1px);
+  padding-left: clamp(7dvw + 5px, 4dvw + 10px, 3dvw + 1px);
+  align-items: center;
+  background-color: white;
+  border-bottom: solid black 2px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.footer__p {
+  padding: clamp(1.3dvw + 5px, 2dvw + 10px, 1dvw + 1px);
+  padding-left: clamp(7dvw + 5px, 4dvw + 10px, 3dvw + 1px);
+  background-color: white;
+  border-top: solid black 2px;
+}
+
+nav > * {
+  margin-right: clamp(0.3dvw + 5px, 0.2dvw + 10px, 0.2dvw + 1px);
+}
+
+.pokemon__image {
+  width: max(13dvw, 200px);
+  padding: calc(1dvw + 0.6rem);
+}
+
+.pokemon__info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon__icon-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1dvw;
+}
+
+.pokemon__button {
+  width: fit-content;
+  /* stylelint-disable-next-line */
+  margin: calc(0.3dvw + 0.7rem);
+  /* stylelint-disable-next-line */
+  padding: calc(0.3dvw + 0.5rem);
+  /* stylelint-disable-next-line */
+  border-radius: calc(0.3dvw + 0.7rem);
+  border: solid black 2px;
+}
+
+.close-button {
+  width: calc(2dvw + 1rem);
+}
+
+.comment-window {
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  top: 28%;
+  left: 28%;
+  transform: translate(-20%, -20%);
+  width: 70%;
+  height: 85%;
+  background-color: white;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+  border: black solid 7px;
+  border-radius: 5%;
+  overflow: scroll;
+}
+
+.comment-window,
+main {
+  grid-area: 1/1;
+}
+
+.comment-window::-webkit-scrollbar {
+  display: none;
+}
+
+.images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.pokemon-generated {
+  width: 30dvw;
+  margin-right: 10dvw;
+}
+
+.pokemon-name {
+  margin: 3dvw;
+  font-size: 5dvw;
+  width: fit-content;
+}
+
+.comment-window > * {
+  font-size: 2dvw;
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-info,
+.comments-shown {
+  width: 100%;
+  margin-bottom: 3dvw;
+}
+
+.list-info > * {
+  margin-bottom: 2dvw;
+}
+
+.comment-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.comment-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-comment {
+  font-size: 3dvw;
+  width: fit-content;
+  margin-bottom: 2dvw;
+}
+
+.comments-number {
+  margin-bottom: 1.5dvw;
+}
+
+.user-name,
+.comment,
+.comment-button {
+  border: 5px black solid;
+  padding: 1dvw;
+  font-size: 2dvw;
+  margin-bottom: 1dvw;
+  border-radius: 10px;
+}
+
+.comment-button {
+  background-color: red;
+  color: white;
+  width: 60%;
+}
+
+.comment-button:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+th,
+td {
+  border-bottom: 1.5dvw solid transparent;
+  padding-left: 2dvw;
+}
+
+.data-date {
+  padding-left: 0;
+}
