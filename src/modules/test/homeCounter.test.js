@@ -1,7 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-import homeCounter from '../homeCounter'
+import homeCounter from '../homeCounter.js';
+
 describe('homeCounter', () => {
   test('should display "Pokemon (0)" when there are no pokemon', () => {
     document.body.innerHTML = `
@@ -32,4 +33,3 @@ describe('homeCounter', () => {
     expect(() => homeCounter(undefined)).not.toThrow();
   });
 });
-
