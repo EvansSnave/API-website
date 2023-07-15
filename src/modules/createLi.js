@@ -1,8 +1,6 @@
-/* eslint-disable */
-import heart from '/src/assets/heart.png';
+import heart from '../assets/heart.png';
 
-const makeCard = (pokemon) => { 
-    return `
+const makeCard = (pokemon) => `
     <li class="list__pokemon">
         <img class="pokemon__image" src="${pokemon.sprites.front_default}" alt="${pokemon.name} image">
         <div class="pokemon__info-container">
@@ -14,6 +12,5 @@ const makeCard = (pokemon) => {
         <button class="pokemon__button comments">Comments</button>
     </li>
   `;
-};
 
 export default makeCard;

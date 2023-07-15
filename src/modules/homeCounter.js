@@ -1,10 +1,9 @@
 const homeCounter = (arr) => {
   if (arr) {
     const amount = document.querySelector('.home__pokemon-amount');
-    amount.textContent = `Pokemon (${arr.length})`;
-  } else {
-    // Do nothing
-  }
+    const cards = document.querySelectorAll('.list__pokemon');
+    amount.textContent = `Pokemon (${cards.length})`;
+  } else return;
 };
 
 export default homeCounter;
