@@ -4,21 +4,13 @@ const likesStored = async () => {
     const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`);
     if (!response.ok) throw new Error('Failed to get likes data.');
     const arrLikes = [];
-    if (response.body) {
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder('utf-8');
-      let result = await reader.read();
-      let chunk = decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
-      while (!result.done) {
-        /* eslint-disable */
-        result = await reader.read();
-        chunk += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
-      }
-      if (chunk.trim() !== '') {
-        JSON.parse(chunk).forEach((element) => {
-          arrLikes.push(element);
-        });
-      }
+    let data = await response.text();
+    if (data === '') data = '{}';
+    const parsedData = JSON.parse(data);
+    if (parsedData && parsedData.length > 0) {
+      parsedData.forEach((element) => {
+        arrLikes.push(element);
+      });
     }
     if (arrLikes.length === 0) return;
     localStorage.setItem('likes', JSON.stringify(arrLikes));
