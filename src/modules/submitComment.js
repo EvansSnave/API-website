@@ -11,14 +11,12 @@ const submit = (id) => {
     event.preventDefault();
   });
 
-  /* eslint-disable */
   submitButton.addEventListener('click', async () => {
-    const commentData = { 
-       name: name.value,
-       id: id,
-       comment: {
-         value: comments.value, },
-      };
+    const commentData = {
+      name: name.value,
+      id,
+      comment: { value: comments.value },
+    };
     await commentSent(commentData);
     await getComment(id);
     loading(id);
