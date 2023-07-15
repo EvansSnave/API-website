@@ -16,6 +16,7 @@ for (let i = 1; i < storage.length; i++) {
   const pokem = new Pokemon(i);
   const pokemon = await pokem.data();
   likesStored();
+  
   pokemonData.push(pokemon);
 }
 
