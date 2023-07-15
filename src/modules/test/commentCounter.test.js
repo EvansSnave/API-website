@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import commentCounter from '../commentCounter'
+import commentCounter from '../commentCounter.js';
 
 describe('commentCounter', () => {
   test('should display "Comments (0)" when there are no comments', () => {
